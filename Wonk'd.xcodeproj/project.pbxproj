@@ -14,6 +14,7 @@
 		7A2407A5225FB76A006DF4AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2407A3225FB76A006DF4AD /* LaunchScreen.storyboard */; };
 		7A2407B0225FB76A006DF4AD /* Wonk_dTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2407AF225FB76A006DF4AD /* Wonk_dTests.swift */; };
 		7A2407BB225FB76A006DF4AD /* Wonk_dUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2407BA225FB76A006DF4AD /* Wonk_dUITests.swift */; };
+		7ACB91782265F58E002F77C6 /* bloop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7ACB91772265F58E002F77C6 /* bloop.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7A2407B6225FB76A006DF4AD /* Wonk'dUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wonk'dUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2407BA225FB76A006DF4AD /* Wonk_dUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wonk_dUITests.swift; sourceTree = "<group>"; };
 		7A2407BC225FB76A006DF4AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ACB91772265F58E002F77C6 /* bloop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bloop.wav; path = Assets.xcassets/bloop.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		7A240799225FB768006DF4AD /* Wonk'd */ = {
 			isa = PBXGroup;
 			children = (
+				7ACB91772265F58E002F77C6 /* bloop.wav */,
 				7A24079A225FB768006DF4AD /* AppDelegate.swift */,
 				7A24079C225FB768006DF4AD /* ViewController.swift */,
 				7A24079E225FB768006DF4AD /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A2407A5225FB76A006DF4AD /* LaunchScreen.storyboard in Resources */,
+				7ACB91782265F58E002F77C6 /* bloop.wav in Resources */,
 				7A2407A2225FB76A006DF4AD /* Assets.xcassets in Resources */,
 				7A2407A0225FB768006DF4AD /* Main.storyboard in Resources */,
 			);
