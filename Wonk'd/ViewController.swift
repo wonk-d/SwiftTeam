@@ -36,6 +36,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
   
+    @IBOutlet weak var favoriteScreen: UIView!
+    @IBOutlet weak var favorite: UIImageView!
+    
+    
     
     
     
@@ -115,7 +119,7 @@ class ViewController: UIViewController {
             //tabs
 //            self.heartLight.isHidden = false
             self.globeDark.isHidden = false
-            self.houseLight.isHidden = false
+          //  self.houseLight.isHidden = false
             //status bar
             self.statusBar.isHidden = true
             //browse view
@@ -133,17 +137,16 @@ class ViewController: UIViewController {
     }
 
     
-    
-    @IBAction func houseDark(_ sender: Any) {
-//        homeScreen.isHidden = false
+    @IBAction func houseLight(_ sender: Any) {
+        //        homeScreen.isHidden = false
         globeLight.isHidden = false
         heartLight.isHidden = false
         welcomeText.isHidden = false
-        houseDark.isHidden = false
+        houseLight.isHidden = false
         home.isHidden = false
-
+        
         UIView.animate(withDuration: 0.5, animations: { //ISSUE WITH LOGO ANIMATING UPWARD
-            self.houseDark.frame = CGRect(x: 0, y: 710, width: 123, height: 65)
+            self.houseLight.frame = CGRect(x: 155, y: 710, width: 123, height: 65)
         }) { (finished) in
             self.browseScreen.isHidden = false
             self.statusBar.isHidden = true
@@ -151,11 +154,22 @@ class ViewController: UIViewController {
             self.globeLight.isHidden = false
             self.home.isHidden = false
             self.welcomeText.isHidden = false
-            self.houseDark.isHidden = false
+            self.houseLight.isHidden = false
             self.bckgndDark.isHidden = true
             //            self.logo.isHidden = true
         }
-}
+    }
+    
+
+    
+//   @IBAction func houseLight(_ sender: Any) {
+//
+//    }
+    
+    
+    @IBAction func heartLight(_ sender: Any) {
+    }
+    
     
     
     //need to set prev. screen tab position to the right spot to make tabs animate up and stay at that position
@@ -181,6 +195,46 @@ class ViewController: UIViewController {
     
     
     //favorites function
+    
+    
+    @IBAction func head1(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func head2(_ sender: Any) {
+        
+    }
+    
+    
+    
+    @IBAction func head3(_ sender: Any) {
+        
+    }
+    
+    
+    
+    @IBAction func head4(_ sender: Any) {
+        
+    }
+    
+
+    
+    @IBAction func head5(_ sender: Any) {
+        
+    }
+    
+    
+    
+    @IBAction func head6(_ sender: Any) {
+        
+    }
+    
+    
+    
+
+    
+    
     
     
     

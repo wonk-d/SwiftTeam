@@ -77,10 +77,6 @@
                                                 <rect key="frame" x="275" y="715" width="123" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="house-light" translatesAutoresizingMaskIntoConstraints="NO" id="3cm-de-4rj">
-                                                <rect key="frame" x="144" y="715" width="123" height="65"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="globe-dark" translatesAutoresizingMaskIntoConstraints="NO" id="NjC-qN-VhR">
                                                 <rect key="frame" x="13" y="715" width="123" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -135,14 +131,91 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doM-vd-83O">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doM-vd-83O" userLabel="House Dark">
                                                 <rect key="frame" x="146" y="715" width="123" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="house-dark"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyh-4f-xbL" userLabel="House Light">
+                                                <rect key="frame" x="183" y="730" width="45" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="house-light"/>
                                                 <connections>
-                                                    <action selector="houseDark:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6HE-8C-WLd"/>
+                                                    <action selector="houseLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QSZ-f6-6iX"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPo-72-Lyl" userLabel="Heart Light">
+                                                <rect key="frame" x="275" y="716" width="123" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="heartLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g1c-Dj-b6G"/>
+                                                </connections>
+                                            </button>
+                                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EV0-V9-jhz">
+                                                <rect key="frame" x="2" y="0.0" width="414" height="852"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Favorites" translatesAutoresizingMaskIntoConstraints="NO" id="eMt-0b-NUB">
+                                                        <rect key="frame" x="154" y="24" width="106" height="54"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-wa-Uwb">
+                                                        <rect key="frame" x="50" y="149" width="118" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="img-profile-light"/>
+                                                        <connections>
+                                                            <action selector="head1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Xs-hM-v9u"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEa-7s-ETO">
+                                                        <rect key="frame" x="231" y="149" width="118" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="img-profile-light"/>
+                                                        <connections>
+                                                            <action selector="head1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CP9-aL-kN6"/>
+                                                            <action selector="head2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rn1-Ca-jDp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvH-wH-GBo">
+                                                        <rect key="frame" x="50" y="319" width="118" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="img-profile-light"/>
+                                                        <connections>
+                                                            <action selector="head1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1x-DK-YbB"/>
+                                                            <action selector="head3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xgh-Lg-b0A"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6d-WV-eNk">
+                                                        <rect key="frame" x="231" y="319" width="118" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="img-profile-light"/>
+                                                        <connections>
+                                                            <action selector="head1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRk-2O-VPp"/>
+                                                            <action selector="head4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Nd-1s-421"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQ0-sq-nlj">
+                                                        <rect key="frame" x="50" y="489" width="118" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="img-profile-light"/>
+                                                        <connections>
+                                                            <action selector="head1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Qe-Uw-qCF"/>
+                                                            <action selector="head5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CR3-nb-PD5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qS-lH-v1D">
+                                                        <rect key="frame" x="231" y="489" width="118" height="118"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="img-profile-light"/>
+                                                        <connections>
+                                                            <action selector="head1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osm-ir-F9z"/>
+                                                            <action selector="head6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJZ-Oc-dnP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.69411764705882351" green="0.75294117647058822" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.69411764710000001" green="0.75294117650000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -158,13 +231,14 @@
                         <outlet property="browse" destination="TCq-Sc-StS" id="P5U-Bl-KGY"/>
                         <outlet property="browseScreen" destination="HZ3-v3-WdE" id="j2c-KP-mdE"/>
                         <outlet property="enter" destination="ElN-4W-oxu" id="hsE-tF-Rwh"/>
+                        <outlet property="favorite" destination="eMt-0b-NUB" id="8HE-GB-Y4p"/>
+                        <outlet property="favoriteScreen" destination="EV0-V9-jhz" id="cYE-3b-UyO"/>
                         <outlet property="globeDark" destination="NjC-qN-VhR" id="fva-I1-HA0"/>
                         <outlet property="globeLight" destination="9gg-O9-3OP" id="hFf-BP-Wqg"/>
                         <outlet property="heartLight" destination="pD5-YU-mm8" id="rzc-vU-yGH"/>
                         <outlet property="home" destination="lx8-dV-IMx" id="hNc-y5-jFI"/>
                         <outlet property="homeScreen" destination="vWH-pL-Goe" id="eID-f8-kVK"/>
                         <outlet property="houseDark" destination="fqJ-pp-2ax" id="HPx-bM-nbU"/>
-                        <outlet property="houseLight" destination="3cm-de-4rj" id="JQZ-mg-xI5"/>
                         <outlet property="label1" destination="2lj-xW-Zgg" id="lsQ-pO-3M7"/>
                         <outlet property="label2" destination="Xg3-aj-LY0" id="04U-de-j9H"/>
                         <outlet property="label3" destination="xM5-1x-b6t" id="OnB-Ki-fJJ"/>
@@ -183,6 +257,7 @@
     </scenes>
     <resources>
         <image name="Browse" width="90" height="18"/>
+        <image name="Favorites" width="110" height="20"/>
         <image name="Hello, John. You have 3 new suggestions!" width="215" height="140"/>
         <image name="Home" width="73" height="18"/>
         <image name="bckgnd-dark" width="375" height="812"/>
@@ -191,6 +266,7 @@
         <image name="heart-light" width="48" height="42"/>
         <image name="house-dark" width="45" height="35"/>
         <image name="house-light" width="45" height="35"/>
+        <image name="img-profile-light" width="118" height="118"/>
         <image name="logo" width="215" height="233"/>
         <image name="status-bar-colored" width="69" height="12"/>
     </resources>
